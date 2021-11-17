@@ -1,0 +1,88 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compile",
+			"dependsOn": [
+				"tsc: build - tsconfig.json"
+				//"docker-run"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "compile_serve",
+			"dependsOn": [
+				"tsc: build - tsconfig.json", 
+				"browser"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "tsc: build - tsconfig.json",
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},			
+		},
+		{
+			"label": "browser",	
+			"command": "",
+			"type": "shell",			
+			"windows":{
+				"args": ["start", "http://localhost:8080"]
+			},
+			"osx":{
+				"args": ["open","http://localhost:8080"]
+			},
+			"linux":{
+				"args": ["xdg-open","http://localhost:8080"]
+			}
+		}
+
+		 /*,
+		{
+			"type": "docker-run",
+			"label": "docker-run",
+			"dockerRun": {
+				"image": "coldb",
+				"ports": [{"containerPort": 3000, "hostPort": 3000}],
+				"containerName": "databaseC",
+				"remove": true,
+				"command": ""
+			}		
+		}*/
+	]
+}

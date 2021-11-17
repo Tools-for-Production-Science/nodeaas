@@ -1,0 +1,9 @@
+{
+    "telemetry.enableTelemetry": false,
+    "git.ignoreLimitWarning": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "python.pythonPath": "C:\\Users\\stamer\\Miniconda3\\python.exe",
+}
