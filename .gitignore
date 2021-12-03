@@ -138,7 +138,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+#Custom
 /built
+/node_modules
 
 *.db
 *.zip
