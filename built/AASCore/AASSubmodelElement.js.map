@@ -1,1 +1,0 @@
-{"version":3,"file":"AASSubmodelElement.js","sourceRoot":"","sources":["../../src/AASCore/AASSubmodelElement.ts"],"names":[],"mappings":";;AAKA;IAEI,4BAAmB,OAAO,EAAS,cAAiC,EAAS,WAAiC,EAAS,SAAuB,EAAS,KAAU;QAA9I,YAAO,GAAP,OAAO,CAAA;QAAS,mBAAc,GAAd,cAAc,CAAmB;QAAS,gBAAW,GAAX,WAAW,CAAsB;QAAS,cAAS,GAAT,SAAS,CAAc;QAAS,UAAK,GAAL,KAAK,CAAK;IAEjK,CAAC;IAEL,yBAAC;AAAD,CAAC,AAND,IAMC"}
