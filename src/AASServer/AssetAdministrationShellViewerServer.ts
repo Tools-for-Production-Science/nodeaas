@@ -1,5 +1,6 @@
-import Asset from "./Asset";
-import Submodel from "./SubModel";
+import AASSubmodel from "../AASCore/AASSubmodel";
+import Asset from "../AASCore/Asset";
+
 
 export default class AssetAdministrationShellViewerServer{
     constructor()
@@ -12,7 +13,7 @@ export default class AssetAdministrationShellViewerServer{
         
     }
     
-    addSubmodel(submodel:Submodel)
+    addSubmodel(submodel:AASSubmodel)
     {
 
     }
