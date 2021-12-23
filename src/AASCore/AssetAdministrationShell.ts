@@ -8,7 +8,7 @@ export default class AAS implements IAASElement
 {
 
     asset:any = undefined;
-    constructor(public idShort, public identification: AASIdentification, public description: Array<AASDescriptor> = [new AASDescriptor()],) { };
+    constructor(public idShort:string, public identification: AASIdentification, public description: Array<AASDescriptor> = [new AASDescriptor()],) { };
     submodels = new Array<AASSubmodel>();
     
     addAsset(asset: Asset)

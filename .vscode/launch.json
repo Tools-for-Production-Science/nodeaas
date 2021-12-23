@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "System ohne Rebuild",
+            "name": "Start without Rebuild",
             "program": "${workspaceFolder}/built/main.js",
             "outFiles": [
                 "${workspaceFolder}/built/**/*.js"

@@ -5,6 +5,7 @@ import AASSubmodel from "./AASCore/AASSubmodel";
 import Asset from "./AASCore/Asset";
 import AAS from "./AASCore/AssetAdministrationShell";
 import AssetAdministrationShellServer from "./AASServer/AssetAdministrationShellServer";
+import AASClassMapper from "./AASUtilities/AASClassMapper";
 
 
 let aas = new AAS("MyShell", new AASIdentification("None", AASIdType.IRI)); //todo: develop an IRI Builder
@@ -14,6 +15,10 @@ let submodel = new AASSubmodel("MySubmodel", new AASIdentification("None", AASId
 aas.addAsset(asset);
 aas.addSubmodel(submodel);
 
+let aasMapper = new AASClassMapper();
+let aas2 = aasMapper.map(aas);
+
 let aasServer = new AssetAdministrationShellServer();
 
 aasServer.addAAS(aas);
+aasServer.addAAS(aas2)
