@@ -1,6 +1,5 @@
 import AASDescriptor from "./AASDescriptor";
 import AASIdentification from "./AASIdentification";
-import AASModelType from "./AASModelType";
 
 export default interface IAASElement
 {

@@ -5,10 +5,17 @@ import AASSubmodel from "../AASCore/AASSubmodel";
 import AASSubmodelElement from "../AASCore/AASSubmodelElement";
 import AAS from "../AASCore/AssetAdministrationShell";
 
+/**
+ * This class provides the possibilty to map any existing class to an aas.
+ */
 export default class AASClassMapper
-{
-
-    map(obj: object):AAS
+{   
+/**
+ * Map a class to an aas
+ * @param obj the object to map
+ * @returns asset administration shell
+ */
+    static map(obj: object):AAS
     {
         throw "not implemented exception"
         let aas = new AAS(obj.constructor.name, new AASIdentification("None", AASIdType.IRI), [new AASDescriptor()]);
@@ -36,7 +43,7 @@ export default class AASClassMapper
         return aas;
     }
 
-    private recursion(obj, aas)
+    private static recursion(obj, aas)
     {
         
     }
